@@ -1,8 +1,8 @@
-from api_framework.data.booking import Booking
-from api_framework.data.booking_data import BookingData
-from api_framework.data.new_booking_data import NewBookingData
+from data.booking import Booking
+from data.booking_data import BookingData
+from data.new_booking_data import NewBookingData
 
-from api_framework.utilites.base_api import BaseAPI
+from utilites.base_api import BaseAPI
 
 
 

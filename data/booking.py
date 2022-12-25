@@ -1,4 +1,4 @@
-from api_framework.data.booking_data import BookingData
+from data.booking_data import BookingData
 import json
 
 

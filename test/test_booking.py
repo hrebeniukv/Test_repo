@@ -1,10 +1,10 @@
 import random
 import json
-from api_framework.data.booking import Booking
-from api_framework.API_colection.booking_api_colections import BookingAPI
+from data.booking import Booking
+from API_colection.booking_api_colections import BookingAPI
 from http import HTTPStatus
 import time
-from api_framework.data.booking_data import BookingData
+from data.booking_data import BookingData
 
 
 def test_get_booking_by_id(environment, get_instance_booking_id):

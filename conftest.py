@@ -2,11 +2,11 @@ import json
 import pytest
 from random import choice
 
-from api_framework.CONSTANS import ROOT_DIR
-from api_framework.data.booking import Booking
-from api_framework.data.booking_data import BookingData
-from api_framework.utilites.configuration import Configuration
-from api_framework.API_colection.booking_api_colections import BookingAPI
+from CONSTANS import ROOT_DIR
+from data.booking import Booking
+from data.booking_data import BookingData
+from utilites.configuration import Configuration
+from API_colection.booking_api_colections import BookingAPI
 
 
 @pytest.fixture(scope='session')
