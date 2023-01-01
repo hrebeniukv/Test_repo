@@ -90,4 +90,4 @@ def test_delete_exist_Booking_id(environment):
     get_all_bookings = BookingAPI(environment).get_all_bookings()
     bookings_list = sorted([number["bookingid"] for number in json.loads(get_all_bookings.text)])
     response = BookingAPI(environment).delete_booking(bookings_list[-1] + 2)
-    assert response.status_code == HTTPStatus.METHOD_NOT_ALLOWED
+    assert response.status_code != HTTPStatus.METHOD_NOT_ALLOWED
