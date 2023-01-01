@@ -17,7 +17,7 @@ def test_get_booking_by_unexist_id(environment):
     get_all_bookings = BookingAPI(environment).get_all_bookings()
     bookings_list = sorted([number["bookingid"] for number in json.loads(get_all_bookings.text)])
     response = BookingAPI(environment).get_booking_by_id(bookings_list[-1] + 2)
-    assert response.status_code != HTTPStatus.NOT_FOUND
+    assert response.status_code == HTTPStatus.NOT_FOUND
 
 
 def test_id_of_new_booking(environment, get_instance_booking_id):
